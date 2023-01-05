@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Seller Admin Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">Seller Admin Page</h1>
+        <form action="#">
+            <label for="sellPrice" class="form-label mb-3">Selling Price : </label>
+            <input type="number" class="form-control mb-3" id="sellPrice">
+            <label for="prodName" class="form-label mb-3">Product Name : </label>
+            <input type="text" class="form-control mb-3" id="prodName">
+            <label for="category" class="form-label mb-3">Choose a Category : </label>
+            <select class="form-select mb-3" id="category">
+                <option value="Electronic Items">Electronic Items</option>
+                <option value="Food Items">Food Items</option>
+                <option value="Skincare Items">Skincare Items</option>
+            </select>
+            <input type="submit" value="Add Product">
+        </form>
+        <h2 class="h2">Products</h2>
+        <ul id="prodList">
+            <h3 class="h3">Electronic Items</h3>
+            <ul id="electronicList">
+
+            </ul>
+            <h3 class="h3">Food Items</h3>
+            <ul id="foodList">
+
+            </ul>
+            <h3 class="h3">Skincare Items</h3>
+            <ul id="skincareList">
+
+            </ul>
+        </ul>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js" integrity="sha512-QTnb9BQkG4fBYIt9JGvYmxPpd6TBeKp6lsUrtiVQsrJ9sb33Bn9s0wMQO9qVBFbPX3xHRAsBHvXlcsrnJjExjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
